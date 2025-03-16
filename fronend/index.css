@@ -1,0 +1,263 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #FFFFFF; /* Green Theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(61, 61, 197);
+}
+h2{
+    color: rgb(61, 61, 197);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #030203;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color:  rgb(61, 61, 197);
+    background-color: #ffffff;
+    border-radius: 4px; /* Yellow Hover Effect */
+}
+
+/* Logout Button */
+#logoutBtn {
+    color: #ffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: rgb(61, 61, 197);
+}
+/* Centering the Form */
+.Reg-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    margin-top: 50px;
+}
+.log-containers{
+    display: flex;
+    height: 100%;
+    padding: 5px;
+    align-items: center;
+    margin-right: 50%;
+    justify-content: center;
+    width: 100%;
+   
+}
+form {
+    margin-left: 20%;
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Proper Label & Input Alignment */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color:  #000000;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:   rgb(61, 61, 197);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#FFFFFF;
+    color:  rgb(61, 61, 197);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    form {
+        width: 80%;
+    }
+}
+
+/* Student Details Section 
+.student_details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.student_details input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+#showRegister,showLogin{
+    font-size: 20px;
+    color: #07d229;
+    text-decoration-line: none;;
+}
+#showLogin{
+    font-size: 20px;
+    color: #07d229;
+    text-decoration-line: none;;
+}
+
+/* Add & Clear Buttons 
+#addStudents, #clear {
+    width: 10%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Table Styling 
+#totalStudents {
+    display: none;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+#attendanceTable{
+    margin: 10%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}*/
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .student_details {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #addStudents, #clear {
+        width: 100%;
+    }
+}

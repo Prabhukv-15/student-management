@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="./adden.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Student Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./result.html">Result</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+    <div id="studentContainer">
+        <h2>Student Attendance Sheet</h2>
+        <div class="student_details">
+           </select>
+          
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Reg</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                    <th>Department</th>
+                    <th>Present</th>
+                    <th>Absent</th>  
+                </tr>
+            </thead>
+            <tbody id="attendanceTable"></tbody>
+        </table>
+    </div>
+    <div class="count-container">
+        <p id="presentCount">presentCount</p>
+        <p id="AbsentCount">AbsentCount</p>
+        <button>submit</button>
+    </div>
+    <script src="./dash.js"></script>
+</body>
+
+</html>

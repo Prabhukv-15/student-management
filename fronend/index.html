@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- JavaScript File (Deferred for Performance) -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Student Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./result.html">Result</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="log-containers" id="loginContainer">
+        <form id="loginForm">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
+        </form>
+    </div>
+    <!-- Register Form -->
+    <div class="Reg-container" id="registerContainer" style="display: none;">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" required autofocus>
+            </div>
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" placeholder="Department" required>
+            </div>
+            <div class="form-group">
+                <label for="registerNo">Register Number</label>
+                <input type="number" id="registerNo" placeholder="Register Number" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNo">Phone Number</label>
+                <input type="tel" id="phoneNo" placeholder="Phone Number" required>
+            </div>
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </form>
+    </div>
+</body>
+</html>

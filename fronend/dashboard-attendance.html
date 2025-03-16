@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="./dash.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Student Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="result.html">Result</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+    <div>
+          <header>
+                <h1>Welcome to Student Dashboard</h1>
+            </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Reg</th>
+                    <th>Email</th>
+                    <th>phoneNo</th>
+                    <th>Department </th>
+                </tr>
+            </thead>
+            <tbody id="addBody"> </tbody>
+        </table>
+    </div>
+    <div class="dashboard" id="dashboard">
+        <!-- Main Content -->
+        <main class="content">
+            <div class="add_btn">
+            <button class="btn" type="button" id="add-btn">&#10133</button></div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-btn">&times;</span>
+            <input class="input-cls" type="text" id="Name" placeholder="Name">
+            <input class="input-cls" type="number" id="Reg" placeholder="Register No">
+            <input class="input-cls" type="email" id="regEmail" placeholder="Email" required>
+            <input class="input-cls" type="tel" id="phoneNo" placeholder="Phone Number" required>
+            <input type="text" id="department" placeholder="Department" required>
+            <div class="addBtn" ><button class="btn-add" onclick="addDetail()">Add</button>
+                </div>
+
+        </div>
+    </div>
+
+
+    <script defer src="./dash.js"></script>
+</body>
+
+</html>

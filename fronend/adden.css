@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Navbar */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(61, 61, 197);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar {
+    background-color: #FFFFFF; /* Green Theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(61, 61, 197);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+    background-color:rgb(61, 61, 197);
+    padding: 8px;
+    border-radius: 4px; /* Yellow Hover Effect */
+}
+
+/* Logout Button */
+#logoutBtn {
+    color: #ffff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logoutBtn:hover {
+    background-color: rgb(61, 61, 197)
+}
+
+/* Container */
+#studentContainer {
+  display: inline;
+}
+
+/* Headings */
+h2 {
+    color: #ffffff;
+    border: #1b1c1c;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.student_details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.student_details input,
+.student_details select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: rgb(61, 61, 197);
+    transition: all 0.3s ease-in-out;
+}
+
+.student_details input::placeholder,
+.student_details select {
+    color: rgb(0, 0, 0);
+    width: 30%;
+}
+
+.student_details input:focus {
+    background-color:rgb(61, 61, 197);
+    color: #000000;
+    border-radius: 40px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(61, 61, 197);
+    background-color: rgb(61, 61, 197);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(61, 61, 197);
+    border-radius: 40px;
+}
+
+/* Table Styles */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding:6px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #000;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust as needed */
+}
+
+th {
+    background-color: rgb(61, 61, 197);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #studentContainer {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    .student_details input,
+    .student_details select {
+        width: 100%;
+    }
+}

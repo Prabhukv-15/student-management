@@ -1,0 +1,128 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(61, 61, 197);
+    padding: 20px 0.1px;
+    color: white;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: background 0.3s ease-in-out;
+}
+.nav-links a:hover {
+    color: #ffeb3b;
+    background-color:   rgb(61, 61, 197);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nav-links button {
+    background-color: rgb(61, 61, 197);
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-links button:hover {
+    background-color: rgb(61, 61, 197);
+}/* Student Details Form */
+.student_details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.student_details input {
+    width: calc(25% - 10px); /* 4 columns layout */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Ensure the total and grade inputs take up more space */
+.student_details input#Total,
+.student_details input#Grade {
+    width: calc(50% - 10px); /* Make Total & Grade wider */
+}
+
+/* Centering the 'Add Student' Button */
+#addStudents {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color:  rgb(61, 61, 197);
+    color: white;
+}
+
+tr:hover td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .student_details input {
+        width: calc(50% - 10px); /* Switch to 2 columns on smaller screens */
+    }
+
+    .student_details input#Total,
+    .student_details input#Grade {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="./results.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Student Management</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="result.html">Result</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+        </ul>
+    </nav>
+
+    <!-- Result Statistics -->
+    <div class="container">
+        <h2>Result Statistics</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Statistic</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Total Students</td>
+                    <td id="totalStudentsCount">0</td>
+                </tr>
+                <tr>
+                    <td>Average Marks</td>
+                    <td id="averageMarks">0</td>
+                </tr>
+                <tr>
+                    <td>Highest Score</td>
+                    <td id="highestScore">0</td>
+                </tr>
+                <tr>
+                    <td>Lowest Score</td>
+                    <td id="lowestScore">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Student Details Section -->
+
+
+    <!-- Student List Table -->
+    <div id="totalStudents">
+        <h2>Student List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reg</th>
+                    <th>Name</th>
+                    <th>Tamil</th>
+                    <th>English</th>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>Social</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                    <th>Action</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <div class="addBtn">
+        <button class="btn" type="button" id="addStudents">&#10133</button>
+    </div>
+
+    <script defer src="./app.js"></script>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="section-title">Student Details</h2>
+            <div id="studentContainer">
+                <div class="student_details">
+                    <input type="number" id="Reg" placeholder="Register No">
+                    <input type="text" id="Name" placeholder="Name">
+                    <input type="number" id="Tamil" placeholder="Tamil">
+                    <input type="number" id="English" placeholder="English">
+                    <input type="number" id="Maths" placeholder="Maths">
+                    <input type="number" id="Science" placeholder="Science">
+                    <input type="number" id="Social" placeholder="Social">
+                    <input type="number" id="Total" placeholder="Total">
+                    <input type="text" id="Grade" placeholder="Grade">
+                    <div class="addBtn"> <button class="btn" onclick="addStudent()">Add</button></div>
+
+                </div>
+            </div>
+
+            <p></p>
+        </div>
+
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="editClose">&times;</span>
+            <h2 class="section-title">Student Details</h2>
+            <div id="editStudentContainer">
+                <div class="student_details">
+                    <input type="number" id="editReg" placeholder="Register No">
+                    <input type="text" id="editName" placeholder="Name">
+                    <input type="number" id="editTamil" placeholder="Tamil">
+                    <input type="number" id="editEnglish" placeholder="English">
+                    <input type="number" id="editMaths" placeholder="Maths">
+                    <input type="number" id="editScience" placeholder="Science">
+                    <input type="number" id="editSocial" placeholder="Social">
+                    <input type="text" id="editGrade" placeholder="Grade">
+                    <div class="addBtn"> <button class="btn" onclick="editStudent()">Edit</button></div>
+
+                </div>
+            </div>
+
+</body>
+
+</html>
